@@ -9,7 +9,7 @@ h1 {
 }
 
 h1, p {
-    margin-left: 20px;
+    margin: 0 0 0 20px;
 }
 
 ul {
@@ -21,6 +21,11 @@ li {
     font-size: 16px;
     line-height: 1;
     list-style: none;
+}
+
+small {
+    text-align: center;
+
 }
 
 .weather {
@@ -48,7 +53,7 @@ li {
 }
 
 .weather-icon {
-    margin-left: 25px;
+    margin: 0 0 40px 25px;
     width: 150px;
 }
 
@@ -60,4 +65,17 @@ li {
     position: relative;
     top: -45px;
     font-size: 24px;
+}
+
+.weather-small-info {
+    text-align: center;
+    border-right: 2px solid #dddddd;
+}
+
+.weather-small-icon {
+    width: 30px;
+}
+
+.row .weather-last {
+    border: none;
 }

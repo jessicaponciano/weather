@@ -13,27 +13,55 @@
     </head>
 
     <body>
-        <section class="container weather">
-            <form class="form-inline" id="search-form">
-                <input type="search" class="form-control col-7" id="city-input" placeholder="Enter a city" />
-                <input type="submit" value="Search" class="form-control col-2 btn-primary" />
-                <button class="btn btn-secondary col-2" id="btn-current-city">Current</button>
-            </form>
-            <h1 id="city"></h1>
-            <p id="date"></p>
-            <div class="row">
-                <div class="col-8 weather-info">
-                    <img src="img/sun-cloudy.png" class="weather-icon" alt="Sun with cloud" />
-                    <ul>
-                        <li><span class="temperature" id="temperature">35</span><span class="unit">˚C</span></li>
-                        <li id="weather-description"></li>
+        <section class="container">
+            <div class="weather">
+                <form class="form-inline" id="search-form">
+                    <input type="search" class="form-control col-7" id="city-input" placeholder="Enter a city" />
+                    <input type="submit" value="Search" class="form-control col-2 btn-primary" />
+                    <button class="btn btn-secondary col-2" id="btn-current-city">Current</button>
+                </form>
+                <h1 id="city"></h1>
+                <p id="date"></p>
+                <p id="weather-description"></p>
+                <div class="row">
+                    <div class="col-8 weather-info">
+                        <img src="img/sun-cloudy.png" class="weather-icon" alt="Sun with cloud" />
+                        <h2><span class="temperature" id="temperature">35</span><span class="unit">˚C</span></h2>
+                    </div>
+                    <ul class="col-4">
+                        <li>Humidity: <span id="humidity"></span>%</li>
+                        <li>Wind: <span id="wind"></span> Km/h</li>
                     </ul>
                 </div>
-                <ul class="col-4">
-                    <li>Humidity: <span id="humidity"></span>%</li>
-                    <li>Wind: <span id="wind"></span> Km/h</li>
-                </ul>
+                <div class="row">
+                    <div class="col weather-small-info">
+                        <h3 class="mb-3">Mon</h3>
+                        <img src="img/sun.png" alt="Sun" class="weather-small-icon mb-2" />
+                        <p>24º</p>
+                    </div>
+                    <div class="col weather-small-info">
+                        <h3 class="mb-3">Tue</h3>
+                        <img src="img/sun-cloudy.png" alt="Sun" class="weather-small-icon mb-2" />
+                        <p>24º</p>
+                    </div>
+                    <div class="col weather-small-info">
+                        <h3 class="mb-3">Wed</h3>
+                        <img src="img/sun.png" alt="Sun" class="weather-small-icon mb-2" />
+                        <p>24º</p>
+                    </div>
+                    <div class="col weather-small-info">
+                        <h3 class="mb-3">Thu</h3>
+                        <img src="img/sun.png" alt="Sun" class="weather-small-icon mb-2" />
+                        <p>24º</p>
+                    </div>
+                    <div class="col weather-small-info weather-last">
+                        <h3 class="mb-3">Fri</h3>
+                        <img src="img/sun-cloudy.png" alt="Sun with cloud" class="weather-small-icon mb-2" />
+                        <p>25º</p>
+                    </div>
+                </div>
             </div>
+            <small><a href="https://github.com/jessicaponciano/weather" target="_blank">Open-source code</a>, by Jessica Fonseca</small>
         </section>
     </body>
 </html>
